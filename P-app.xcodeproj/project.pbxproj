@@ -13,6 +13,11 @@
 		008A8EAA1C104A71002A1E14 /* P_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 008A8EA81C104A71002A1E14 /* P_app.xcdatamodeld */; };
 		008A8EAC1C104A71002A1E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008A8EAB1C104A71002A1E14 /* Assets.xcassets */; };
 		008A8EAF1C104A71002A1E14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008A8EAD1C104A71002A1E14 /* LaunchScreen.storyboard */; };
+		008A8EB81C105272002A1E14 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008A8EB71C105272002A1E14 /* Plane.swift */; settings = {ASSET_TAGS = (); }; };
+		008A8EBA1C105445002A1E14 /* Posititon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008A8EB91C105445002A1E14 /* Posititon.swift */; settings = {ASSET_TAGS = (); }; };
+		008A8EBC1C1058CF002A1E14 /* PreviousLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008A8EBB1C1058CF002A1E14 /* PreviousLocation.swift */; settings = {ASSET_TAGS = (); }; };
+		008A8EBE1C105B2F002A1E14 /* AccountSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008A8EBD1C105B2F002A1E14 /* AccountSession.swift */; settings = {ASSET_TAGS = (); }; };
+		008A8EC01C105D68002A1E14 /* DatabaseMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008A8EBF1C105D68002A1E14 /* DatabaseMediator.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		008A8EAB1C104A71002A1E14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		008A8EAE1C104A71002A1E14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		008A8EB01C104A71002A1E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		008A8EB71C105272002A1E14 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		008A8EB91C105445002A1E14 /* Posititon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Posititon.swift; sourceTree = "<group>"; };
+		008A8EBB1C1058CF002A1E14 /* PreviousLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousLocation.swift; sourceTree = "<group>"; };
+		008A8EBD1C105B2F002A1E14 /* AccountSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSession.swift; sourceTree = "<group>"; };
+		008A8EBF1C105D68002A1E14 /* DatabaseMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseMediator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		008A8EA01C104A71002A1E14 /* P-app */ = {
 			isa = PBXGroup;
 			children = (
+				008A8EB61C105255002A1E14 /* Scripts */,
 				008A8EA11C104A71002A1E14 /* AppDelegate.swift */,
 				008A8EA31C104A71002A1E14 /* ViewController.swift */,
 				008A8EA51C104A71002A1E14 /* Main.storyboard */,
@@ -65,6 +76,18 @@
 				008A8EA81C104A71002A1E14 /* P_app.xcdatamodeld */,
 			);
 			path = "P-app";
+			sourceTree = "<group>";
+		};
+		008A8EB61C105255002A1E14 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				008A8EB71C105272002A1E14 /* Plane.swift */,
+				008A8EB91C105445002A1E14 /* Posititon.swift */,
+				008A8EBB1C1058CF002A1E14 /* PreviousLocation.swift */,
+				008A8EBD1C105B2F002A1E14 /* AccountSession.swift */,
+				008A8EBF1C105D68002A1E14 /* DatabaseMediator.swift */,
+			);
+			name = Scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +162,12 @@
 			files = (
 				008A8EA41C104A71002A1E14 /* ViewController.swift in Sources */,
 				008A8EA21C104A71002A1E14 /* AppDelegate.swift in Sources */,
+				008A8EB81C105272002A1E14 /* Plane.swift in Sources */,
+				008A8EC01C105D68002A1E14 /* DatabaseMediator.swift in Sources */,
+				008A8EBA1C105445002A1E14 /* Posititon.swift in Sources */,
 				008A8EAA1C104A71002A1E14 /* P_app.xcdatamodeld in Sources */,
+				008A8EBE1C105B2F002A1E14 /* AccountSession.swift in Sources */,
+				008A8EBC1C1058CF002A1E14 /* PreviousLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
