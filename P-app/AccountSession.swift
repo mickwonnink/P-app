@@ -18,7 +18,6 @@ class AccountSession{
     var level : Int
     
     init(accountid : Int, displayname : String, email : String, password : String, experience : Int64, level : Int){
-        
         self.accountID = accountid
         self.displayName = displayname
         self.email = email

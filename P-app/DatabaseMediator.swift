@@ -17,6 +17,42 @@ class DatabaseMediator{
         
     }
     
+    static func loadJsonData(url_:String)
+    {
+        let url = NSURL(string: url_)
+        let request = NSURLRequest(URL: url!)
+        let session = NSURLSession.sharedSession()
+        let dataTask = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
+            do // TRY for each json object to parse it into a 'command'
+            {
+                if let jsonObject: AnyObject = try NSJSONSerialization.JSONObjectWithData(data!, 	   options: NSJSONReadingOptions.AllowFragments)
+                {
+                    self.parseJsonData(jsonObject)
+                    print(jsonObject)
+                }
+            }
+            catch
+            {
+                print("Error parsing JSON data")
+            }
+        }
+        dataTask.resume();
+    }
+    
+    static func parseJsonData(jsonObject:AnyObject)
+    {
+        if let jsonData = jsonObject as? NSArray
+        {
+            for item in jsonData
+            {
+                //recognize commands with the key 'commandname'
+                print(item)
+            }
+            print(jsonData.count)
+        }
+        print("alsohere")
+    }
+    
     func getAllPlanes() -> [Plane]{
         var planes = [Plane]()
         
@@ -44,9 +80,15 @@ class DatabaseMediator{
         return false
     }
     
-    func registerAccount(account : AccountSession) -> Bool {
+    func registerAccount(newaccount : AccountSession) -> Bool {
         
         return false
+    }
+    
+    func login(username : String, password: String) -> AccountSession{
+        var existingSession : AccountSession = AccountSession(displayname: "none", email: "none", password: "none")
+        
+        return existingSession
     }
     
     func addPlane(plane : Plane) -> Bool{
